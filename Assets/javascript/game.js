@@ -1,27 +1,52 @@
 var letters = ["a", "b", "c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
-var wins = 0;
-var losses = 0;
-var guessesLeft = 9;
+let wins = 0;
+let losses = 0;
+let guessesLeft = 9;
 
 var userWins = document.getElementById("user-wins");
 var userLosses = document.getElementById("user-losses");
 var userGuessesLeft = document.getElementById("user-guessesLeft");
 var userGuess = document.getElementById("user-guesses");
-
+var userGuessArray = [];
+var userInput;
 var computerGuess = letters[Math.floor(Math.random() * letters.length)];
+console.log(computerGuess);
+
+
+
 
 
 document.onkeyup = function(event) {
-    userGuess.textContent = event.key;
+    userGuess.innerHTML += event.key;
+    var keyPressed = event.key;
+    console.log(keyPressed);
+console.log(wins);
+if (keyPressed === computerGuess) {
+    wins++
+
+//append wins.append(wins)
+//call function that generated random letter
+//clear user guess
+}
+else if (keyPressed !== computerGuess){ 
+    guessesLeft--;
+    console.log(guessesLeft);
+}
+// console.log(wins);
+}
+
+//allow for display of 9
+
+//if letter guessed- 
+    //reset- keep track of wins
+
+//if letter not guessed
+    //add to userGuess
+        //reduce turns left
+            //
+    //keep track of losses
 
 
 
-//if userGuess === computerGuess (loop to varify if user guess is in array)
-    //run reset
-        //add to wins - how to keep wins?
-    //else write guess to "user-guesses" - how to write multiple guesses while keeping computer guess
-
-    //after 9 misses 
-        //run reset
-            //add to losses
+//reset after 
