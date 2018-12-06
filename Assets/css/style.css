@@ -1,0 +1,10 @@
+.container--gameLines {
+    border: 2px dotted blue;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20%;
+}
+
+#user-guesses{
+    color: grey;
+}
