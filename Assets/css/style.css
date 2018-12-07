@@ -5,6 +5,13 @@
     padding-left: 20%;
 }
 
-#user-guesses{
+#user-guesses, #user-guessesLeft, #user-losses, #user-wins {
     color: grey;
+}
+
+.jumbotron-fluid {
+    background-color: blue;
+    color: blueviolet;
+    width: 100%;
+    
 }
